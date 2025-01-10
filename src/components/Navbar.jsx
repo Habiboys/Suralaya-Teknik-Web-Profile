@@ -22,11 +22,11 @@ const Navbar = () => {
 
 
   const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/services', label: 'Services' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/contact', label: 'Contact' }
+    { path: '/', label: 'Beranda' },
+    { path: '/about', label: 'Tentang Kami' },
+    { path: '/services', label: 'Layanan' },
+    { path: '/projects', label: 'Proyek' },
+    { path: '/contact', label: 'Kontak' }
   ];
 
   return (
@@ -55,7 +55,7 @@ const Navbar = () => {
               transition={{ duration: 0.5 }}
               className="flex items-center space-x-2"
             >
-              <span>CV. Suralaya Teknik</span>
+              <span>Suralaya Teknik</span>
             </motion.div>
           </Link>
           

@@ -32,78 +32,42 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-     
-   {/* Hero Banner */}
-{/* <div className="relative h-screen w-full">
-  <div className="absolute inset-0 w-full h-full">
-    <img 
-      src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop"
-      alt="Engineering Background"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black/50"></div>
-  </div>
-  <div className="relative h-full flex items-center justify-center px-4">
-    <div className="max-w-7xl mx-auto text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ 
-          duration: 0.8,
-          ease: "easeOut"
-        }}
-      >
-        <span className="text-white text-sm font-medium tracking-wider uppercase mb-4 block">
-          About Us
-        </span>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-          Our Story
-        </h1>
-        <p className="text-xl text-white/90 max-w-3xl mx-auto">
-          Building the future of MEP solutions with innovation, expertise, and dedication.
-        </p>
-      </motion.div>
-    </div>
-  </div>
-</div> */}
+      {/* Hero Banner with Image Background */}
+      <div className="relative py-40 px-4 w-full">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 w-full">
+          <img 
+            src="https://images.unsplash.com/photo-1635837594301-aee27378931f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Engineering Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
 
-        {/* Hero Banner with Image Background */}
-        <div className="relative py-40 px-4 w-full">
-  {/* Background Image Container */}
-  <div className="absolute inset-0 w-full">
-    <img 
-      src="https://images.unsplash.com/photo-1635837594301-aee27378931f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Engineering Background"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black/50"></div>
-  </div>
-
-  {/* Content Container */}
-  <div className="relative">
-    <div className="max-w-7xl mx-auto text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ 
-          duration: 0.8,
-          ease: "easeOut"
-        }}
-      >
-        <span className="text-white text-sm font-medium tracking-wider uppercase mb-4 block">
-              Get In Touch
-            </span>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              Contact Us
-            </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Let's discuss how we can help with your MEP needs
-            </p>
-      </motion.div>
-    </div>
-  </div>
-</div>
-
+        {/* Content Container */}
+        <div className="relative">
+          <div className="max-w-7xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8,
+                ease: "easeOut"
+              }}
+            >
+              <span className="text-white text-sm font-medium tracking-wider uppercase mb-4 block">
+                Hubungi Kami
+              </span>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+                Kontak Kami
+              </h1>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto">
+                Diskusikan kebutuhan sistem HVAC Anda dengan kami
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
       {/* Contact Content */}
       <div className="bg-white relative z-10">
@@ -117,9 +81,9 @@ const Contact = () => {
               className="space-y-12"
             >
               <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-800">Let's Connect</h2>
+                <h2 className="text-3xl font-bold mb-8 text-gray-800">Mari Terhubung</h2>
                 <p className="text-lg text-gray-600 mb-12">
-                  We're here to help with any questions about our MEP services. Reach out to us through any of these channels.
+                  Kami siap membantu menjawab pertanyaan Anda tentang layanan HVAC kami. Hubungi kami melalui saluran berikut.
                 </p>
               </div>
 
@@ -129,12 +93,12 @@ const Contact = () => {
                     <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800">Visit Us</h3>
+                    <h3 className="text-xl font-bold text-gray-800">Alamat</h3>
                   </div>
                   <p className="text-gray-600 pl-16">
-                    Jl. Raya Suralaya No. 123<br />
-                    Jakarta Selatan, 12345<br />
-                    Indonesia
+                    Jl. By Pass Ketaping No. 16B<br />
+                    RT. 05/RW. 06, Kel. Pasar Ambacang<br />
+                    Kec. Kuranji, Kota Padang
                   </p>
                 </div>
 
@@ -143,12 +107,12 @@ const Contact = () => {
                     <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                       <Clock className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800">Hours</h3>
+                    <h3 className="text-xl font-bold text-gray-800">Jam Kerja</h3>
                   </div>
                   <div className="text-gray-600 pl-16 space-y-1">
-                    <p>Mon - Fri: 9am - 5pm</p>
-                    <p>Saturday: 9am - 1pm</p>
-                    <p>Sunday: Closed</p>
+                    <p>Senin - Jumat: 08:00 - 17:00</p>
+                    <p>Sabtu: 08:00 - 15:00</p>
+                    <p>Minggu: Tutup</p>
                   </div>
                 </div>
 
@@ -157,10 +121,10 @@ const Contact = () => {
                     <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800">Phone</h3>
+                    <h3 className="text-xl font-bold text-gray-800">Telepon</h3>
                   </div>
                   <p className="text-gray-600 pl-16">
-                    +62 21 1234 5678
+                    (0751) 463793
                   </p>
                 </div>
 
@@ -172,7 +136,7 @@ const Contact = () => {
                     <h3 className="text-xl font-bold text-gray-800">Email</h3>
                   </div>
                   <p className="text-gray-600 pl-16">
-                    info@suralayateknik.com
+                    cv.suralayateknik@yahoo.co.id
                   </p>
                 </div>
               </div>
@@ -185,11 +149,11 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-gray-50 p-8 rounded-2xl"
             >
-              <h3 className="text-2xl font-bold mb-6 text-gray-800">Send us a message</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-800">Kirim Pesan</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Name
+                    Nama
                   </label>
                   <input
                     type="text"
@@ -215,7 +179,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone
+                    No. Telepon
                   </label>
                   <input
                     type="tel"
@@ -227,7 +191,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Message
+                    Pesan
                   </label>
                   <textarea
                     value={formState.message}
@@ -243,7 +207,7 @@ const Contact = () => {
                     ${isSubmitting ? 'opacity-75 cursor-not-allowed' : ''}`}
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
                 </button>
 
                 {submitStatus === 'success' && (
@@ -252,7 +216,7 @@ const Contact = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-green-600 text-center bg-green-50 p-4 rounded-lg"
                   >
-                    Message sent successfully!
+                    Pesan berhasil terkirim!
                   </motion.div>
                 )}
               </form>

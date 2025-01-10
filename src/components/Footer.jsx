@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Building2, Wind, Wrench } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -23,34 +23,29 @@ const Footer = () => {
                 CV. Suralaya Teknik
               </h3>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                Leading MEP solutions provider with a commitment to excellence and innovation.
+                Mitra terpercaya dalam solusi teknik mekanikal, elektrikal, dan plumbing sejak 2012.
               </p>
-            </div>
-            <div className="flex space-x-4">
-              {[Twitter, Facebook, Instagram, Linkedin].map((Icon, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="p-2 rounded-full bg-gray-50 text-gray-600 hover:bg-primary hover:text-white transition-colors duration-300"
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Menu Links */}
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-6">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-6">Menu Utama</h4>
             <ul className="space-y-4">
-              {['Home', 'About', 'Services', 'Projects', 'Contact'].map((item) => (
-                <li key={item}>
+              {[
+                { name: 'Beranda', path: '/' },
+                { name: 'Tentang Kami', path: '/about' },
+                { name: 'Layanan', path: '/services' },
+                { name: 'Proyek', path: '/projects' },
+                { name: 'Kontak', path: '/contact' }
+              ].map((item) => (
+                <li key={item.name}>
                   <Link
-                    to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                    to={item.path}
                     className="text-gray-600 hover:text-primary transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 mr-2" />
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -59,18 +54,18 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-6">Our Services</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-6">Layanan Kami</h4>
             <ul className="space-y-4">
               {[
-                'Mechanical Systems',
-                'Electrical Systems',
-                'Plumbing Systems',
-                'Building Automation',
-                'Energy Management'
+                'Supply HVAC',
+                'AC Komersial',
+                'AC Domestik',
+                'Instalasi & Perbaikan',
+                'Pemeliharaan Berkala'
               ].map((service) => (
                 <li key={service}>
                   <Link
-                    to="#"
+                    to="/services"
                     className="text-gray-600 hover:text-primary transition-colors duration-300 flex items-center group"
                   >
                     <span className="w-2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 mr-2" />
@@ -83,18 +78,27 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold text-gray-900 mb-6">Contact Us</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-6">Hubungi Kami</h4>
             <ul className="space-y-4">
               {[
-                { Icon: MapPin, text: 'Padang, Indonesia' },
-                { Icon: Phone, text: '+62 21 1234 5678' },
-                { Icon: Mail, text: 'info@suralayateknik.com' }
+                { 
+                  Icon: MapPin, 
+                  text: 'Jl. By Pass Ketaping No. 16B, RT. 05/RW. 06, Kelurahan Pasar Ambacang Kecamatan Kuranji, Kota Padang' 
+                },
+                { 
+                  Icon: Phone, 
+                  text: '(0751) 463793' 
+                },
+                { 
+                  Icon: Mail, 
+                  text: 'cv.suralayateknik@yahoo.co.id' 
+                }
               ].map((item, index) => (
-                <li key={index} className="flex items-center space-x-3 text-gray-600">
-                  <div className="p-2 rounded-full bg-gray-50">
+                <li key={index} className="flex items-start space-x-3 text-gray-600">
+                  <div className="p-2 rounded-full bg-gray-50 flex-shrink-0">
                     <item.Icon size={18} className="text-primary" />
                   </div>
-                  <span>{item.text}</span>
+                  <span className="text-sm">{item.text}</span>
                 </li>
               ))}
             </ul>
@@ -105,19 +109,8 @@ const Footer = () => {
         <div className="pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 text-sm">
-              © 2024 CV Suralaya Teknik. All rights reserved.
+              © {new Date().getFullYear()} CV Suralaya Teknik. Hak Cipta Dilindungi.
             </p>
-            <div className="flex flex-wrap gap-6">
-              {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="text-sm text-gray-600 hover:text-primary transition-colors duration-300"
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </div>

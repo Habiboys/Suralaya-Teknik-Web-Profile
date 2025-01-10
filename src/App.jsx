@@ -1,31 +1,29 @@
-// App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import { AnimatePresence } from 'framer-motion'
+import MainLayout from './components/MainLayout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Cursor from './components/Cursor'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <Cursor />
-        <Navbar />
         <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+            <Route path="/about" element={<MainLayout><About /></MainLayout>} />
+            <Route path="/services" element={<MainLayout><Services /></MainLayout>} />
+            <Route path="/projects" element={<MainLayout><Projects /></MainLayout>} />
+            <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
-        <Footer />
       </div>
     </Router>
   )
