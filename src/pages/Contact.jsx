@@ -124,7 +124,7 @@ const Contact = () => {
                     <h3 className="text-xl font-bold text-gray-800">Telepon</h3>
                   </div>
                   <p className="text-gray-600 pl-16">
-                    (0751) 463793
+                  +62 5355631966
                   </p>
                 </div>
 

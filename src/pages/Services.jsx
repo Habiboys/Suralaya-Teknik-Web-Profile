@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
-import { Wind, Wrench, Home, CheckCircle2 } from 'lucide-react'
+import { Wind, Wrench, Zap, Settings, Activity } from 'lucide-react'
 
 const Services = () => {
   const containerRef = useRef(null)
@@ -11,36 +11,47 @@ const Services = () => {
 
   const services = [
     {
-      title: "Komersial HVAC",
-      description: "Layanan komprehensif untuk sistem pendingin udara komersial, dari desain hingga pemeliharaan.",
+      title: "Mekanikal",
+      description: "Layanan komprehensif untuk sistem mekanikal dengan standar kualitas tertinggi.",
+      icon: Settings,
+      features: [
+        "Instalasi Sistem HVAC",
+        "Sistem Ventilasi",
+        "Sistem Chiller",
+        "Sistem Fire Fighting"
+      ]
+    },
+    {
+      title: "Elektrikal",
+      description: "Solusi sistem kelistrikan lengkap untuk berbagai kebutuhan gedung dan industri.",
+      icon: Zap,
+      features: [
+        "Panel Listrik",
+        "Sistem Distribusi Daya",
+        "Sistem Penerangan",
+        "Sistem Grounding"
+      ]
+    },
+    {
+      title: "Plumbing",
+      description: "Layanan sistem perpipaan dan sanitasi yang terintegrasi.",
+      icon: Activity,
+      features: [
+        "Sistem Air Bersih",
+        "Sistem Air Kotor",
+        "Sistem Drainase",
+        "Instalasi Sanitasi"
+      ]
+    },
+    {
+      title: "HVAC",
+      description: "Solusi pendingin udara dan pengkondisian udara untuk kenyamanan optimal.",
       icon: Wind,
       features: [
-        "Desain & Instalasi AC Komersial",
-        "Penjualan Perangkat HVAC",
-        "Servis & Pemeliharaan Berkala",
-        "Solusi Hemat Energi"
-      ]
-    },
-    {
-      title: "Domestik & Residensial",
-      description: "Solusi pendingin udara untuk rumah dan properti residensial dengan layanan lengkap.",
-      icon: Home,
-      features: [
-        "Instalasi AC Rumah",
-        "Penjualan Unit AC",
-        "Servis & Perbaikan",
-        "Konsultasi Sistem"
-      ]
-    },
-    {
-      title: "Pemeliharaan & Perbaikan",
-      description: "Layanan pemeliharaan terencana dan perbaikan untuk semua jenis sistem pendingin.",
-      icon: Wrench,
-      features: [
-        "Pemeliharaan Rutin",
-        "Perbaikan Darurat",
-        "Inspeksi Berkala",
-        "Optimasi Kinerja"
+        "Sistem AC Sentral",
+        "Sistem VRV/VRF",
+        "Sistem Ventilasi",
+        "Sistem BMS"
       ]
     }
   ]
@@ -52,8 +63,8 @@ const Services = () => {
         {/* Background Image Container */}
         <div className="absolute inset-0 w-full">
           <img 
-              src="https://images.unsplash.com/photo-1635837594301-aee27378931f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="HVAC Services Background"
+            src="https://images.unsplash.com/photo-1635837594301-aee27378931f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="MEP & HVAC Services Background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50"></div>
@@ -71,10 +82,10 @@ const Services = () => {
                 Layanan Kami
               </span>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-                Solusi HVAC Terpercaya
+                Solusi MEP & HVAC Terpercaya
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Spesialis sistem pendingin udara untuk komersial dan residensial
+                Spesialis sistem MEP & HVAC untuk gedung komersial dan industri
               </p>
             </motion.div>
           </div>
@@ -92,7 +103,7 @@ const Services = () => {
         {/* Services Grid */}
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
               {services.map((service, index) => (
                 <motion.div
                   key={service.title}
@@ -116,9 +127,11 @@ const Services = () => {
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: true }}
                           transition={{ delay: i * 0.1 }}
-                          className="flex items-center gap-3 text-gray-600"
+                          className="flex items-start gap-3 text-gray-600"
                         >
-                          <CheckCircle2 className="w-5 h-5 text-primary/60" />
+                          <div className="mt-1">
+                            <div className="w-2 h-2 rounded-full bg-primary/60" />
+                          </div>
                           <span>{feature}</span>
                         </motion.li>
                       ))}
@@ -137,17 +150,17 @@ const Services = () => {
               <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Cara Kami Bekerja</span>
               <h2 className="text-4xl font-bold mb-6 text-gray-800">Proses Layanan</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Pendekatan profesional untuk setiap proyek HVAC
+                Pendekatan profesional untuk setiap proyek MEP & HVAC
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
               <div className="absolute top-1/2 left-0 w-full h-px bg-gray-200 hidden md:block" />
               {[
-                { step: "01", title: "Konsultasi", description: "Analisis kebutuhan dan sistem yang sesuai" },
-                { step: "02", title: "Desain", description: "Perencanaan sistem yang efisien" },
-                { step: "03", title: "Instalasi", description: "Pemasangan oleh tim ahli" },
-                { step: "04", title: "Maintenance", description: "Pemeliharaan dan dukungan berkelanjutan" }
+                { step: "01", title: "Konsultasi", description: "Analisis kebutuhan dan perencanaan sistem" },
+                { step: "02", title: "Engineering", description: "Perencanaan teknis dan desain" },
+                { step: "03", title: "Instalasi", description: "Implementasi oleh tim ahli" },
+                { step: "04", title: "Maintenance", description: "Pemeliharaan dan dukungan sistem" }
               ].map((item, index) => (
                 <motion.div
                   key={item.step}
@@ -179,9 +192,9 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold mb-6 text-gray-800">Butuh Solusi HVAC?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-800">Butuh Solusi MEP & HVAC?</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Konsultasikan kebutuhan sistem pendingin udara Anda dengan tim ahli kami
+                Konsultasikan kebutuhan sistem MEP & HVAC Anda dengan tim ahli kami
               </p>
               <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
                 Hubungi Kami

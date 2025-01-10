@@ -87,7 +87,7 @@ const Footer = () => {
                 },
                 { 
                   Icon: Phone, 
-                  text: '(0751) 463793' 
+                  text: '+62 5355631966' 
                 },
                 { 
                   Icon: Mail, 

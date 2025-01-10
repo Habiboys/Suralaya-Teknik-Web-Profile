@@ -32,68 +32,67 @@ const Home = () => {
   return (
     <div className="relative min-h-screen">
       {/* Hero Section */}
-{/* Hero Section */}
-<motion.div 
-  style={{ opacity: headerOpacity, y: headerY }}
-  className="relative h-screen flex items-center justify-center px-4"
->
-  <div className="absolute inset-0">
-    <img 
-       src="https://images.unsplash.com/photo-1635837594301-aee27378931f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt="Modern Architecture"
-      className="w-full h-full object-cover"
-    />
-    {/* Updated gradient overlay for better contrast and professional look */}
-    <div className="absolute inset-0 bg-black/50"></div>
-  </div>
-  
-  <motion.div
-    initial="hidden"
-    animate={isVisible ? "visible" : "hidden"}
-    variants={containerVariants}
-    className="relative z-10 max-w-4xl mx-auto text-center"
-  >
-    <motion.div variants={fadeInUpVariants} className="mb-6">
-      <span className="inline-block px-6 py-2 rounded-full bg-blue-500/20 text-blue-100 text-sm font-medium mb-4 backdrop-blur-sm">
-        Solusi MEP Terpercaya
-      </span>
-    </motion.div>
-
-    <motion.h1 
-      variants={fadeInUpVariants}
-      className="text-6xl md:text-7xl font-bold mb-6 text-white"
-    >
-      CV. Suralaya Teknik
-    </motion.h1>
-
-    <motion.p 
-      variants={fadeInUpVariants}
-      className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto"
-    >
-      Mitra terpercaya dalam solusi teknik mekanikal, elektrikal, dan plumbing sejak 2012
-    </motion.p>
-
-    <motion.div
-      variants={fadeInUpVariants}
-      className="flex flex-col sm:flex-row gap-4 justify-center"
-    >
-      <Link 
-        to="/contact"
-        className="group inline-flex items-center px-8 py-4 rounded-full bg-blue-600 text-white font-medium transition-all hover:bg-blue-700 hover:scale-105"
+      <motion.div 
+        style={{ opacity: headerOpacity, y: headerY }}
+        className="relative h-screen flex items-center justify-center px-4"
       >
-        Hubungi Kami
-        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-      </Link>
-      
-      <Link 
-        to="/projects"
-        className="inline-flex items-center px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white font-medium hover:bg-white/20 hover:border-white/30 transition-all"
-      >
-        Lihat Proyek
-      </Link>
-    </motion.div>
-  </motion.div>
-</motion.div>
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1635837594301-aee27378931f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Modern Architecture"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <motion.div
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          variants={containerVariants}
+          className="relative z-10 max-w-4xl mx-auto text-center"
+        >
+          <motion.div variants={fadeInUpVariants} className="mb-6">
+            <span className="inline-block px-6 py-2 rounded-full bg-blue-500/20 text-blue-100 text-sm font-medium mb-4 backdrop-blur-sm">
+              Solusi MEP & HVAC Terpercaya
+            </span>
+          </motion.div>
+
+          <motion.h1 
+            variants={fadeInUpVariants}
+            className="text-6xl md:text-7xl font-bold mb-6 text-white"
+          >
+            CV. Suralaya Teknik
+          </motion.h1>
+
+          <motion.p 
+            variants={fadeInUpVariants}
+            className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto"
+          >
+            Mitra terpercaya dalam solusi MEP & HVAC yang terintegrasi sejak 2012
+          </motion.p>
+
+          <motion.div
+            variants={fadeInUpVariants}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <Link 
+              to="/contact"
+              className="group inline-flex items-center px-8 py-4 rounded-full bg-blue-600 text-white font-medium transition-all hover:bg-blue-700 hover:scale-105"
+            >
+              Hubungi Kami
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+            
+            <Link 
+              to="/projects"
+              className="inline-flex items-center px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white font-medium hover:bg-white/20 hover:border-white/30 transition-all"
+            >
+              Lihat Proyek
+            </Link>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
       {/* Overview Section */}
       <section className="relative py-24 overflow-hidden bg-white">
         <div className="relative max-w-7xl mx-auto px-4">
@@ -111,26 +110,26 @@ const Home = () => {
               </div>
               
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-800">
-                Solusi HVAC Terpercaya
+                Solusi MEP & HVAC Terintegrasi
               </h2>
               
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Kami menyediakan layanan komprehensif untuk sistem pendingin udara komersial dan domestik dengan standar kualitas tertinggi.
+                Kami menyediakan layanan komprehensif untuk sistem MEP & HVAC dengan standar kualitas tertinggi untuk berbagai kebutuhan gedung dan industri.
               </p>
               
               <div className="space-y-6">
                 {[
                   {
-                    title: "Tim Ahli",
-                    description: "Didukung oleh tenaga profesional berpengalaman di bidang HVAC"
+                    title: "Tim Ahli Berpengalaman",
+                    description: "Didukung oleh tenaga profesional berpengalaman di bidang MEP & HVAC"
                   },
                   {
-                    title: "Layanan Lengkap",
-                    description: "Dari desain, penjualan, instalasi hingga pemeliharaan"
+                    title: "Layanan Terintegrasi",
+                    description: "Dari perencanaan, instalasi hingga pemeliharaan sistem yang komprehensif"
                   },
                   {
                     title: "Pengalaman Luas",
-                    description: "Telah dipercaya menangani berbagai proyek sejak 2012"
+                    description: "Telah menangani berbagai proyek MEP & HVAC sejak 2012"
                   }
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4">
@@ -162,7 +161,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Technology Section */}
+      {/* Services Section */}
       <section className="relative py-24 bg-gray-50 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4">
           <motion.div
@@ -173,32 +172,37 @@ const Home = () => {
             className="text-center mb-20"
           >
             <motion.h2 variants={fadeInUpVariants} className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-              Layanan HVAC Komprehensif
+              Layanan MEP & HVAC Komprehensif
             </motion.h2>
             <motion.p variants={fadeInUpVariants} className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Solusi sistem pendingin udara yang efisien untuk berbagai kebutuhan
+              Solusi sistem terintegrasi untuk berbagai kebutuhan industri
             </motion.p>
           </motion.div>
 
           <motion.div
             variants={containerVariants}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-4 gap-8"
           >
             {[
               {
-                title: "AC Komersial",
-                description: "Desain, penjualan, servis dan pemasangan sistem AC untuk gedung komersial",
-                icon: Building2
-              },
-              {
-                title: "AC Domestik",
-                description: "Solusi pendingin udara untuk kebutuhan rumah dan properti residensial",
+                title: "HVAC",
+                description: "Sistem pendingin udara, ventilasi, dan pengkondisian udara untuk kenyamanan optimal",
                 icon: Wind
               },
               {
-                title: "Pemeliharaan",
-                description: "Layanan pemeliharaan dan perbaikan terencana untuk semua kebutuhan AC",
+                title: "Mekanikal",
+                description: "Sistem mekanikal dan perpipaan untuk berbagai kebutuhan industri",
                 icon: Settings
+              },
+              {
+                title: "Elektrikal",
+                description: "Sistem kelistrikan, instalasi daya, dan sistem pencahayaan",
+                icon: Zap
+              },
+              {
+                title: "Plumbing",
+                description: "Sistem perpipaan, drainase, dan pengolahan air",
+                icon: Activity
               }
             ].map((item) => (
               <motion.div
@@ -236,7 +240,7 @@ const Home = () => {
               Komitmen Pada Kualitas
             </motion.h2>
             <motion.p variants={fadeInUpVariants} className="text-lg text-gray-600 leading-relaxed">
-              Menghadirkan solusi HVAC terbaik dengan standar kualitas tinggi
+              Menghadirkan solusi MEP & HVAC terbaik dengan standar kualitas tinggi
             </motion.p>
           </motion.div>
 
@@ -247,19 +251,19 @@ const Home = () => {
             {[
               {
                 title: "Keahlian",
-                description: "Tim profesional dengan pengalaman luas di bidang HVAC",
+                description: "Tim profesional dengan pengalaman luas di bidang MEP & HVAC",
                 icon: Users2,
                 accent: "border-blue-200"
               },
               {
                 title: "Kualitas",
-                description: "Menggunakan peralatan dan material berkualitas tinggi",
+                description: "Standar kerja tinggi dengan hasil yang terjamin",
                 icon: Shield,
                 accent: "border-green-200"
               },
               {
                 title: "Pelayanan",
-                description: "Layanan after-sales dan maintenance yang terjamin",
+                description: "Dukungan teknis dan pemeliharaan berkelanjutan",
                 icon: Wrench,
                 accent: "border-violet-200"
               }
@@ -297,7 +301,7 @@ const Home = () => {
               <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Cara Kerja Kami</span>
               <h2 className="text-4xl font-bold mb-6 text-gray-800">Proses Layanan</h2>
               <p className="text-lg text-gray-600">
-                Pendekatan sistematis untuk setiap proyek HVAC
+                Pendekatan sistematis untuk setiap proyek MEP & HVAC
               </p>
             </motion.div>
           </motion.div>
@@ -309,10 +313,10 @@ const Home = () => {
             <div className="absolute top-1/2 left-0 w-full h-px bg-gray-100" />
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
               {[
-                { number: "01", title: "Konsultasi", desc: "Analisis kebutuhan dan sistem yang sesuai" },
-                { number: "02", title: "Desain", desc: "Perencanaan sistem yang efisien" },
-                { number: "03", title: "Instalasi", desc: "Pemasangan oleh tim ahli" },
-                { number: "04", title: "Maintenance", desc: "Pemeliharaan dan dukungan berkelanjutan" }
+                { number: "01", title: "Konsultasi", desc: "Analisis kebutuhan dan perencanaan sistem" },
+                { number: "02", title: "Desain", desc: "Perencanaan teknis dan engineering" },
+                { number: "03", title: "Instalasi", desc: "Implementasi oleh tim ahli" },
+                { number: "04", title: "Maintenance", desc: "Pemeliharaan dan dukungan sistem" }
               ].map((step, index) => (
                 <motion.div
                   key={step.number}
@@ -338,8 +342,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="relative py-24 overflow-hidden">
-
-         <div className="absolute inset-0">
+        <div className="absolute inset-0">
           <div className="absolute inset-0 bg-primary mix-blend-multiply opacity-90" />
           <img 
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
@@ -360,13 +363,13 @@ const Home = () => {
               variants={fadeInUpVariants} 
               className="text-4xl font-bold mb-6"
             >
-              Butuh Solusi HVAC?
+              Butuh Solusi MEP & HVAC?
             </motion.h2>
             <motion.p 
               variants={fadeInUpVariants}
               className="text-xl mb-10 text-white/90"
             >
-              Konsultasikan kebutuhan sistem pendingin udara Anda dengan tim ahli kami
+              Konsultasikan kebutuhan sistem MEP & HVAC Anda dengan tim ahli kami
             </motion.p>
             <motion.div
               variants={fadeInUpVariants}
