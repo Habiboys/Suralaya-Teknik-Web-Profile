@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Building2, Wind, Wrench } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-blue-400/10 rounded-full mix-blend-multiply filter blur-3xl opacity-25" />
         </div>
       </div>
-
+      
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -23,7 +23,7 @@ const Footer = () => {
                 CV. Suralaya Teknik
               </h3>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                Mitra terpercaya dalam solusi teknik mekanikal, elektrikal, dan plumbing sejak 2012.
+                Mitra terpercaya dalam solusi MEP dan HVAC sejak 2012.
               </p>
             </div>
           </div>
@@ -57,9 +57,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-gray-900 mb-6">Layanan Kami</h4>
             <ul className="space-y-4">
               {[
-                'Supply HVAC',
-                'AC Komersial',
-                'AC Domestik',
+                'HVAC',
+                'MEP',
                 'Instalasi & Perbaikan',
                 'Pemeliharaan Berkala'
               ].map((service) => (
@@ -87,7 +86,7 @@ const Footer = () => {
                 },
                 { 
                   Icon: Phone, 
-                  text: '(0751) 463793' 
+                  text: '+62 5355631966' 
                 },
                 { 
                   Icon: Mail, 

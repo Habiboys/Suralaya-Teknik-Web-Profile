@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-        <Cursor />
+        {/*<Cursor />*/}
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<MainLayout><Home /></MainLayout>} />

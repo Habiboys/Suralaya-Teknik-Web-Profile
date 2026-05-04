@@ -44,7 +44,7 @@ const About = () => {
                 CV Suralaya Teknik
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Mitra terpercaya untuk solusi MEP sejak 2012
+                Mitra terpercaya untuk solusi  & HVAC sejak 2012
               </p>
             </motion.div>
           </div>
@@ -73,7 +73,7 @@ const About = () => {
                   Profil Perusahaan
                 </span>
                 <h2 className="text-4xl font-bold text-gray-800">
-                  Solusi MEP Terpercaya
+                  Solusi MEP & HVAC Terpercaya
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
                   CV. Suralaya Teknik, berdiri pada tahun 2012, adalah perusahaan MEP yang bergerak dalam solusi teknik mekanikal, elektrikal, dan plumbing. Kami menawarkan layanan konsultan yang komprehensif untuk membantu klien merancang, mengintegrasikan, dan memelihara sistem MEP yang efisien.
@@ -144,117 +144,137 @@ const About = () => {
             </div>
           </section>
 
-          {/* Organization Structure */}
           <section className="py-24 bg-gradient-to-b from-gray-50 to-white -mx-4 px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-                  Tim Kami
-                </span>
-                <h2 className="text-4xl font-bold mb-6 text-gray-800">
-                  Struktur Organisasi
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Tim profesional yang berdedikasi
-                </p>
-              </div>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
+            Tim Kami
+          </span>
+          <h2 className="text-4xl font-bold mb-6 text-gray-800">
+            Struktur Organisasi
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Tim profesional yang berdedikasi
+          </p>
+        </div>
 
-              <div className="relative max-w-4xl mx-auto">
-                {/* Direktur */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="flex flex-col items-center mb-8"
-                >
-                  <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-6 rounded-xl shadow-xl w-72 text-center transform transition-transform hover:scale-105">
-                    <div className="text-white/80 text-lg mb-2">Direktur</div>
-                    <div className="text-white font-bold text-xl">Suroto</div>
-                  </div>
-                </motion.div>
-
-                {/* Vertical Line */}
-                <div className="w-px h-12 bg-blue-300 mx-auto -mt-4 mb-4"></div>
-
-                {/* Penanggung Jawab Teknik */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="flex flex-col items-center mb-8"
-                >
-                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl shadow-lg w-72 text-center transform transition-transform hover:scale-105">
-                    <div className="text-white/80 text-lg mb-2">Penanggung Jawab Teknik</div>
-                    <div className="text-white font-bold text-xl">Irfansyah, ST</div>
-                  </div>
-                </motion.div>
-
-                {/* Vertical Line */}
-                <div className="w-px h-12 bg-blue-300 mx-auto -mt-4 mb-4"></div>
-
-                {/* Three Positions Level */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative mb-12">
-                  {/* Horizontal Connecting Line */}
-                  <div className="hidden md:block absolute top-1/2 left-0 right-0 h-px bg-blue-300 -translate-y-1/2"></div>
-                  
-                  {/* Administrasi */}
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-full text-center transform transition-transform hover:scale-105">
-                      <div className="text-white/80 text-lg mb-2">Administrasi</div>
-                      <div className="text-white font-bold text-xl">Taufiqul Qadri</div>
-                    </div>
-                  </motion.div>
-
-                  {/* Pelaksana Lapangan */}
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-full text-center transform transition-transform hover:scale-105">
-                      <div className="text-white/80 text-lg mb-2">Pelaksana Lapangan</div>
-                      <div className="text-white font-bold text-xl">Wahyo Chloriana</div>
-                    </div>
-                  </motion.div>
-
-                  {/* Teknisi */}
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-full text-center transform transition-transform hover:scale-105">
-                      <div className="text-white/80 text-lg mb-2">Teknisi</div>
-                      <div className="text-white font-bold text-xl">Dani Saputra Ifrian</div>
-                    </div>
-                  </motion.div>
-                </div>
-
-                {/* Vertical Line to Administrasi Logistik */}
-                <div className="w-px h-12 bg-blue-300 mx-auto mb-4"></div>
-
-                {/* Administrasi Logistik */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="flex flex-col items-center"
-                >
-                  <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-72 text-center transform transition-transform hover:scale-105">
-                    <div className="text-white/80 text-lg mb-2">Administrasi Logistik</div>
-                    <div className="text-white font-bold text-xl">Ilham Akbar</div>
-                  </div>
-                </motion.div>
-              </div>
+        <div className="relative max-w-5xl mx-auto">
+          {/* Direktur */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center mb-8"
+          >
+            <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-6 rounded-xl shadow-xl w-72 text-center transform transition-transform hover:scale-105">
+              <div className="text-white/80 text-lg mb-2">Direktur</div>
+              <div className="text-white font-bold text-xl">Suroto</div>
             </div>
-          </section>
+          </motion.div>
+
+          {/* Vertical Line from Direktur to PJ Teknik */}
+          <div className="w-px h-12 bg-blue-300 mx-auto -mt-4 mb-4"></div>
+
+          {/* PJ Teknik and Input Data Level */}
+          <div className="relative">
+            {/* Center Position - PJ Teknik */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center mb-8"
+            >
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl shadow-lg w-72 text-center transform transition-transform hover:scale-105">
+                <div className="text-white/80 text-lg mb-2">Penanggung Jawab Teknik</div>
+                <div className="text-white font-bold text-xl">Irfansyah, ST</div>
+              </div>
+            </motion.div>
+
+            {/* Horizontal Line to Input Data */}
+            <div className="hidden md:block absolute top-1/2 left-[calc(50%+144px)] w-32 h-px bg-blue-300 -translate-y-1/2"></div>
+
+            {/* Right Position - Input Data */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="absolute top-0 right-0 md:right-12 flex flex-col items-center"
+            >
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl shadow-lg w-72 text-center transform transition-transform hover:scale-105">
+                <div className="text-white/80 text-lg mb-2">Karyawan</div>
+                <div className="text-white font-bold text-xl">Galih Ramadhan</div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Vertical Line to Three Positions */}
+          <div className="w-px h-12 bg-blue-300 mx-auto -mt-4 mb-4"></div>
+
+          {/* Three Positions Level */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative mb-12">
+            {/* Horizontal Connecting Line */}
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-px bg-blue-300 -translate-y-1/2"></div>
+            
+            {/* Administrasi */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center"
+            >
+              <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-full text-center transform transition-transform hover:scale-105">
+                <div className="text-white/80 text-lg mb-2">Administrasi</div>
+                <div className="text-white font-bold text-xl">Taufiqul Qadri</div>
+              </div>
+            </motion.div>
+
+            {/* Pelaksana Lapangan */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center"
+            >
+              <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-full text-center transform transition-transform hover:scale-105">
+                <div className="text-white/80 text-lg mb-2">Pelaksana Lapangan</div>
+                <div className="text-white font-bold text-xl">Wahyo Chloriana</div>
+              </div>
+            </motion.div>
+
+            {/* Teknisi */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center"
+            >
+              <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-full text-center transform transition-transform hover:scale-105">
+                <div className="text-white/80 text-lg mb-2">Teknisi</div>
+                <div className="text-white font-bold text-xl">Dani Saputra Ifrian</div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Vertical Line to Administrasi Logistik */}
+          <div className="w-px h-12 bg-blue-300 mx-auto mb-4"></div>
+
+          {/* Administrasi Logistik */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center"
+          >
+            <div className="bg-gradient-to-br from-blue-400 to-blue-500 p-6 rounded-xl shadow-lg w-72 text-center transform transition-transform hover:scale-105">
+              <div className="text-white/80 text-lg mb-2">Administrasi Logistik</div>
+              <div className="text-white font-bold text-xl">Ilham Akbar</div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+
+ 
         </div>
       </motion.div>
     </div>
