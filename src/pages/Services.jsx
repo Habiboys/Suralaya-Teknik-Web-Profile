@@ -15,10 +15,10 @@ const Services = () => {
       description: "Layanan komprehensif untuk sistem mekanikal dengan standar kualitas tertinggi.",
       icon: Settings,
       features: [
-        "Instalasi Sistem HVAC",
-        "Sistem Ventilasi",
-        "Sistem Chiller",
-        "Sistem Fire Fighting"
+        // "Instalasi Sistem HVAC",
+        // "Sistem Ventilasi",
+        // "Sistem Chiller",
+        // "Sistem Fire Fighting"
       ]
     },
     {
@@ -26,10 +26,10 @@ const Services = () => {
       description: "Solusi sistem kelistrikan lengkap untuk berbagai kebutuhan gedung dan industri.",
       icon: Zap,
       features: [
-        "Panel Listrik",
-        "Sistem Distribusi Daya",
-        "Sistem Penerangan",
-        "Sistem Grounding"
+        // "Panel Listrik",
+        // "Sistem Distribusi Daya",
+        // "Sistem Penerangan",
+        // "Sistem Grounding"
       ]
     },
     {
@@ -37,10 +37,10 @@ const Services = () => {
       description: "Layanan sistem perpipaan dan sanitasi yang terintegrasi.",
       icon: Activity,
       features: [
-        "Sistem Air Bersih",
-        "Sistem Air Kotor",
-        "Sistem Drainase",
-        "Instalasi Sanitasi"
+        // "Sistem Air Bersih",
+        // "Sistem Air Kotor",
+        // "Sistem Drainase",
+        // "Instalasi Sanitasi"
       ]
     },
     {
@@ -48,10 +48,10 @@ const Services = () => {
       description: "Solusi pendingin udara dan pengkondisian udara untuk kenyamanan optimal.",
       icon: Wind,
       features: [
-        "Sistem AC Sentral",
-        "Sistem VRV/VRF",
-        "Sistem Ventilasi",
-        "Sistem BMS"
+        // "Sistem AC Sentral",
+        // "Sistem VRV/VRF",
+        // "Sistem Ventilasi",
+        // "Sistem BMS"
       ]
     }
   ]
@@ -85,7 +85,7 @@ const Services = () => {
                 Solusi MEP & HVAC Terpercaya
               </h1>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
-                Spesialis sistem MEP & HVAC untuk gedung komersial dan industri
+                Spesialis sistem MEP & HVAC untuk komersial dan industri
               </p>
             </motion.div>
           </div>

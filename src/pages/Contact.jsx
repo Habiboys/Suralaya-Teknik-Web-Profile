@@ -110,8 +110,7 @@ const Contact = () => {
                     <h3 className="text-xl font-bold text-gray-800">Jam Kerja</h3>
                   </div>
                   <div className="text-gray-600 pl-16 space-y-1">
-                    <p>Senin - Jumat: 08:00 - 17:00</p>
-                    <p>Sabtu: 08:00 - 15:00</p>
+                    <p>Senin - Sabtu: 09:00 - 17:00</p>
                     <p>Minggu: Tutup</p>
                   </div>
                 </div>

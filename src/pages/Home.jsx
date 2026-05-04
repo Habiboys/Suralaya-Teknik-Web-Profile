@@ -68,7 +68,7 @@ const Home = () => {
             variants={fadeInUpVariants}
             className="text-xl md:text-2xl text-gray-200 mb-12 max-w-2xl mx-auto"
           >
-            Mitra terpercaya dalam solusi MEP & HVAC yang terintegrasi sejak 2012
+            Mitra terpercaya dalam solusi MEP & HVAC yang sejak 2012
           </motion.p>
 
           <motion.div
